@@ -47,6 +47,7 @@ test("beta pages identify their status before the first heading and link to thei
 
 test("home keeps the previous download fragment and puts features before previews", () => {
   const html = readFileSync(resolve(root, "index.html"), "utf8");
+  assert.ok(html.indexOf('id="features"') < html.indexOf('id="how"'));
   assert.match(html, /id="download"/);
   assert.match(html, /id="beta"/);
 });

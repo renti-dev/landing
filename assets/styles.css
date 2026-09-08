@@ -855,15 +855,6 @@ h2 {
   font-size: 0.7em;
   line-height: 0;
 }
-.platform-footnote {
-  display: flex;
-  align-items: baseline;
-  gap: 4px;
-  margin-top: 8px;
-  color: #7c8798;
-  font-size: 12px;
-  line-height: 1.6;
-}
 .mobile-preview-list {
   grid-area: mobile;
   display: grid;
@@ -2980,7 +2971,7 @@ footer .logo {
     border-bottom: 0;
   }
   .mobile-preview-list {
-    gap: 46px;
+    gap: 56px;
     width: 100%;
     max-width: none;
     margin: 0;
@@ -2991,8 +2982,8 @@ footer .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
-    text-align: left;
+    gap: 24px;
+    text-align: center;
   }
   .mobile-preview-item:nth-child(2) .phone-shell {
     order: 0;
@@ -3000,23 +2991,25 @@ footer .logo {
   }
   .mobile-preview-copy {
     width: 100%;
-    max-width: none;
+    max-width: 360px;
     padding-left: 0;
     border-left: 0;
   }
   .mobile-preview-label {
-    margin-bottom: 4px;
-    font-size: 13px;
+    margin-bottom: 8px;
+    font-size: 14px;
   }
   .mobile-preview-copy h3 {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.4;
+    text-wrap: balance;
   }
   .mobile-preview-copy p {
-    margin-top: 6px;
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.55;
+    line-height: 1.7;
+    text-wrap: balance;
   }
   .mobile-preview-item .phone-shell {
     width: min(100%, 306px);
