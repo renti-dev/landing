@@ -14,7 +14,10 @@ test("home page exposes one main landmark around all primary sections", () => {
   const mainMatches = [...html.matchAll(/<main\b[^>]*>([\s\S]*?)<\/main>/g)];
 
   assert.equal(mainMatches.length, 1);
-  assert.equal([...mainMatches[0][1].matchAll(/<section\b/g)].length, 6);
+  assert.equal(
+    [...mainMatches[0][1].matchAll(/<section\b/g)].length,
+    [...html.matchAll(/<section\b/g)].length,
+  );
   assert.ok(html.indexOf("</main>") < html.indexOf("<footer>"));
   assert.doesNotMatch(mainMatches[0][1], /<footer\b/);
   assert.doesNotMatch(mainMatches[0][1], /floating-beta-cta/);

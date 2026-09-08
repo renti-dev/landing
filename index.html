@@ -14,7 +14,7 @@
     <title>랜디 | 임대인의 시간을 아껴주는 월세관리 자동화 앱</title>
     <meta
       name="description"
-      content="랜디는 임대인의 시간을 아껴주는 월세관리 자동화 앱입니다. Android 은행 입금 알림을 기기에서 분석해 월세 납부 후보를 정리하고 사용자가 확인할 수 있게 돕습니다."
+      content="랜디는 임대인의 시간을 아껴주는 월세관리 자동화 앱입니다. Android 은행 입금 알림을 분석해 일치하는 납부 내역을 자동 기록하고, 호실별 수납 현황을 정리합니다."
     />
     <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#0b1730" />
@@ -32,7 +32,7 @@
     />
     <meta
       property="og:description"
-      content="Android 은행 입금 알림을 기기에서 분석해 월세 납부 후보를 정리하고, 사용자가 확인할 수 있게 돕습니다."
+      content="Android 은행 입금 알림을 분석해 일치하는 납부 내역을 자동 기록하고, 호실별 수납 현황을 정리합니다."
     />
     <meta property="og:url" content="https://www.landy.co.kr/" />
     <meta
@@ -52,7 +52,7 @@
     />
     <meta
       name="twitter:description"
-      content="Android 은행 입금 알림을 기기에서 분석해 월세 납부 후보를 정리하고, 사용자가 확인할 수 있게 돕습니다."
+      content="Android 은행 입금 알림을 분석해 일치하는 납부 내역을 자동 기록하고, 호실별 수납 현황을 정리합니다."
     />
     <meta
       name="twitter:image"
@@ -68,7 +68,11 @@
             "@id": "https://www.landy.co.kr/#organization",
             "name": "랜디",
             "legalName": "이공일소프트",
-            "alternateName": ["랜디 월세관리", "Landy", "landy.co.kr"],
+            "alternateName": [
+              "랜디 월세관리",
+              "Landy",
+              "landy.co.kr"
+            ],
             "url": "https://www.landy.co.kr/",
             "email": "support.landy@gmail.com",
             "logo": "https://www.landy.co.kr/assets/icon.svg",
@@ -81,7 +85,11 @@
             "@type": "WebSite",
             "@id": "https://www.landy.co.kr/#website",
             "name": "랜디",
-            "alternateName": ["랜디 월세관리", "Landy", "landy.co.kr"],
+            "alternateName": [
+              "랜디 월세관리",
+              "Landy",
+              "landy.co.kr"
+            ],
             "url": "https://www.landy.co.kr/",
             "publisher": {
               "@id": "https://www.landy.co.kr/#organization"
@@ -99,7 +107,7 @@
               "https://play.google.com/store/apps/details?id=com.landy.app",
               "https://apps.apple.com/kr/app/id6804934479"
             ],
-            "description": "임대인의 시간을 아껴주는 월세관리 자동화 앱입니다. Android 은행 입금 알림을 기기에서 분석해 월세 납부 후보를 정리하고 사용자가 확인할 수 있게 돕습니다.",
+            "description": "임대인의 시간을 아껴주는 월세관리 자동화 앱입니다. Android 은행 입금 알림을 분석해 일치하는 납부 내역을 자동 기록하고, 호실별 수납 현황을 정리합니다.",
             "publisher": {
               "@id": "https://www.landy.co.kr/#organization"
             }
@@ -113,23 +121,47 @@
                 "name": "랜디는 어떤 임대인에게 적합한가요?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "원룸·오피스텔·상가처럼 여러 호실의 월세 입금 확인과 수납을 직접 처리하는 소규모 임대인에게 적합합니다. 중·대규모 임대인은 대개 중개사나 관리업체를 통해 수납과 민원을 처리하기 때문에, 랜디는 직접 관리하는 임대인의 반복 업무를 줄이는 데 집중합니다."
+                  "text": "원룸·오피스텔·상가처럼 여러 호실의 월세 수납과 세입자 연락을 직접 관리하는 임대인에게 적합합니다. 건물과 호실별로 계약 정보, 월별 납부 내역, 미납 상태를 한곳에서 확인할 수 있습니다."
                 }
               },
               {
                 "@type": "Question",
-                "name": "월세 미납은 어떻게 확인하나요?",
+                "name": "아이폰과 Android에서 같은 기능을 사용할 수 있나요?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "세입자와 호실, 월세, 납입일을 등록하면 랜디가 Android 은행 입금 알림을 기기에서 분석해 월세 납부 후보를 정리합니다. 사용자가 후보를 확인하면 확정한 납부 내역과 등록된 납입일을 기준으로 이번 달 상태를 확인할 수 있습니다."
+                  "text": "건물·호실·세입자 관리와 납부 내역 직접 등록은 Android와 iOS에서 모두 이용할 수 있습니다. 은행 앱의 입금 알림을 분석하는 자동 기록은 Android에서 지원합니다. iOS에서는 납부 내역을 직접 등록해 수납 현황을 관리합니다."
                 }
               },
               {
                 "@type": "Question",
-                "name": "세입자에게 미납 안내를 보낼 수 있나요?",
+                "name": "월세 납부 내역은 어떻게 기록되나요?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "미납 안내 문구를 직접 작성하지 않아도 정해진 템플릿을 바탕으로 세입자에게 부담 없이 안내할 수 있도록 준비하고 있습니다."
+                  "text": "Android에서는 지원 은행 앱의 입금 알림을 분석하고, 입금자·금액·납부월이 등록 정보와 일치하는 내역을 자동으로 기록합니다. 자동으로 연결되지 않는 입금이나 현금 납부는 내역을 확인한 뒤 직접 등록할 수 있습니다. 등록된 납부 내역은 앱에서 확인하고 수정할 수 있습니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "어떤 은행의 입금 알림을 지원하나요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "KB국민은행, 신한은행, 우리은행, 하나은행, NH농협, 카카오뱅크, 케이뱅크 등 지원 은행 앱의 입금 알림을 분석합니다. 같은 은행이어도 사용하는 앱이나 알림 형식에 따라 인식 여부가 달라질 수 있습니다. 자동으로 기록되지 않은 내역은 직접 등록할 수 있습니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "자동 기록을 사용하려면 어떤 권한이 필요한가요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Android에서 은행 앱의 입금 알림을 켜고, 랜디에 알림 접근 권한을 허용해야 합니다. 알림 접근을 허용하지 않아도 납부 내역을 직접 등록할 수 있습니다. 납부일·계약 만기 등 랜디의 안내 알림을 받으려면 앱 알림도 허용해주세요."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "세입자에게 미납 안내 문자를 보낼 수 있나요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "세입자를 선택하고 안내 문구를 준비하면, 수신자와 내용이 채워진 기기의 기본 문자 앱이 열립니다. 내용을 확인한 뒤 사용자가 직접 발송합니다. iOS에서는 수신자별로 문자 작성 화면이 열리며, 문자 요금은 통신사 요금제에 따라 발생할 수 있습니다."
                 }
               },
               {
@@ -137,7 +169,15 @@
                 "name": "월세 수납 관리는 무료인가요?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "월세 수납 관리 기능은 무료로 제공할 예정입니다. 향후 AI 자동화 등 고도화 기능은 별도 유료 플랜으로 제공될 수 있습니다."
+                  "text": "현재 건물·호실 및 세입자 등록, 월세 수납 관리, 문자 안내 준비 등 기본 기능은 모두 무료입니다. 문자는 기기의 문자 앱을 통해 발송되며, 통신사 요금제에 따라 별도 요금이 발생할 수 있습니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "입실 기록과 반복 문의 자동화도 바로 사용할 수 있나요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "입실 기록과 반복 문의 자동화는 앱의 기본 기능과 별도로 베타 참여를 신청하는 기능입니다. 각 기능 소개 페이지에서 베타 안내를 신청할 수 있습니다."
                 }
               }
             ]
@@ -174,7 +214,7 @@
 
     <main id="main-content" tabindex="-1">
     <section class="hero">
-      <p class="hero-eyebrow">임대인의 시간을 아껴주는 월세관리 자동화 앱</p>
+      <p class="hero-eyebrow">임대인의 시간을 아껴주는 임대관리 자동화 앱</p>
       <h1>매달 월세 입금 확인,<br /><em>직접 하고 계신가요?</em></h1>
       <p class="hero-sub">
         호실별 월세와 납입일을 한눈에 확인하고,<br />
@@ -205,12 +245,8 @@
             <img src="/assets/google-play-badge.svg" alt="Google Play에서 다운로드" width="135" height="40" />
           </a>
         </div>
-        <a class="how-link" href="#how">어떻게 작동하나요? <span aria-hidden="true">→</span></a>
+        <a class="how-link" href="#how">앱 사용 화면 보기 <span aria-hidden="true">→</span></a>
       </div>
-      <p class="platform-note">
-        은행 입금 알림 분석은 Android에서 제공됩니다.<br class="mobile-break" />
-        iPhone에서는 납부 내역을 직접 등록해 관리할 수 있어요.
-      </p>
       <div class="hero-showcase" aria-label="랜디 알림 도착 흐름">
         <div
           class="hero-lockscreen"
@@ -283,6 +319,10 @@
           </div>
         </div>
       </div>
+      <p class="platform-note">
+        은행 입금 알림 분석은 Android에서 제공됩니다.<br class="mobile-break" />
+        iOS에서는 납부 내역을 직접 등록해 관리할 수 있어요.
+      </p>
     </section>
 
     <section class="section">
@@ -368,11 +408,8 @@
             </p>
           </div>
         </div>
-        <p class="pain-bridge">랜디가 매달 반복되는 확인 부담을 줄입니다.</p>
       </div>
     </section>
-
-
 
     <section class="section" id="features">
       <div class="section-inner">
@@ -382,32 +419,32 @@
             <h2>랜디가 줄여주는<br />반복 업무</h2>
           </div>
           <p class="section-desc">
-            입금 알림 분석 → 납부 후보 정리 → 사용자 확인 → 수납 이력.<br />매달
-            직접 대조하던 확인 업무를 간단하게 만듭니다.
+            월세 수납과 계약 일정, 세입자 안내를<br />
+            한곳에서 관리하세요.
           </p>
         </div>
-        <div class="feature-flow" aria-label="월세 수납 자동화 흐름">
+        <div class="feature-flow" aria-label="Android 은행 입금 알림 처리 흐름">
           <div class="feature-flow-step">
             <span class="feature-flow-dot">01</span>
             <span>입금 알림 분석</span>
           </div>
           <div class="feature-flow-step">
             <span class="feature-flow-dot">02</span>
-            <span>납부 후보 정리</span>
+            <span>호실 정보 매칭</span>
           </div>
           <div class="feature-flow-step">
             <span class="feature-flow-dot">03</span>
-            <span>사용자 확인</span>
+            <span>일치한 내역 기록</span>
           </div>
           <div class="feature-flow-step">
             <span class="feature-flow-dot">04</span>
-            <span>수납 이력</span>
+            <span>수납 현황 확인</span>
           </div>
         </div>
+        <p class="feature-flow-note">Android에서 일치한 입금 내역을 자동 기록하며, 직접 등록도 지원합니다.</p>
         <div class="feature-grid">
           <div class="feature-card">
             <div class="feature-top">
-              <span class="feature-num">01</span>
               <span class="feature-icon" aria-hidden="true">
                 <svg
                   viewBox="0 0 24 24"
@@ -427,8 +464,8 @@
             </div>
             <h3>수납 현황 대시보드</h3>
             <p>
-              은행 앱을 켤 필요가 없습니다. 전체 호실의 납입 상태와 이번 달
-              수납률이 첫 화면에 정리되어 있습니다.
+              호실별 납부 상태와 이번 달 수납 현황을 한 화면에서 확인합니다.
+              미납된 호실과 지난달 납부 내역도 빠르게 찾아보세요.
             </p>
             <a class="feature-link" href="/features/rent-collection"
               >월세 수납 관리 보기</a
@@ -436,7 +473,6 @@
           </div>
           <div class="feature-card">
             <div class="feature-top">
-              <span class="feature-num">02</span>
               <span class="feature-icon" aria-hidden="true">
                 <svg
                   viewBox="0 0 24 24"
@@ -454,18 +490,17 @@
                 </svg>
               </span>
             </div>
-            <h3>소규모 임대관리</h3>
+            <h3>호실·세입자 관리</h3>
             <p>
-              원룸·오피스텔·상가를 직접 관리하는 임대인을 위해 월세 수납, 납입
-              이력과 계약 일정을 한곳에서 정리합니다.
+              건물별로 호실을 나누고 세입자, 월세, 납입일, 계약 정보를
+              등록합니다. 여러 건물의 관리 정보도 한곳에서 확인하세요.
             </p>
             <a class="feature-link" href="/features/small-landlord-app"
-              >소규모 임대관리 앱 보기</a
+              >호실 관리 살펴보기</a
             >
           </div>
           <div class="feature-card">
             <div class="feature-top">
-              <span class="feature-num">03</span>
               <span class="feature-icon" aria-hidden="true">
                 <svg
                   viewBox="0 0 24 24"
@@ -491,7 +526,6 @@
           </div>
           <div class="feature-card">
             <div class="feature-top">
-              <span class="feature-num">04</span>
               <span class="feature-icon" aria-hidden="true">
                 <svg
                   viewBox="0 0 24 24"
@@ -511,44 +545,13 @@
             </div>
             <h3>세입자 안내 발송</h3>
             <p>
-              미납 안내 문구를 직접 작성하지 않아도 됩니다. 정해진 템플릿으로
-              부담 없이 보낼 수 있게 됩니다.
+              안내 문구를 준비하고 수신자를 선택하면 기본 문자 앱이 열립니다.
+              내용을 확인한 뒤 직접 발송하세요.
             </p>
             <a class="feature-link" href="/features/overdue-notice"
               >월세 미납 안내 보기</a
             >
           </div>
-        </div>
-        <div class="feature-extension">
-          <div>
-            <span class="feature-extension-label">베타 기능 · 입실 기록</span>
-            <h3>입실 전 사진과 메모를 퇴실 전에 바로 찾도록</h3>
-            <p>
-              입실 전 방 상태를 호실과 위치별로 남겨두고, 퇴실 정산 때 필요한
-              기록을 빠르게 찾는 기능을 함께 다듬고 있습니다.
-            </p>
-          </div>
-          <a
-            class="feature-extension-link"
-            href="/features/move-out-dispute"
-            >퇴실 분쟁 대비 기록 보기</a
-          >
-        </div>
-        <div class="feature-extension">
-          <div>
-            <span class="feature-extension-label">베타 기능 · 반복 문의</span>
-            <h3>정해진 문의는 안내하고, 중요한 문의는 임대인이 확인하도록</h3>
-            <p>
-              계좌·주차·분리수거처럼 답이 정해진 문의는 등록한 답변으로 안내하고,
-              누수·고장처럼 판단이 필요한 문의는 임대인에게 알리는 기능을 테스트
-              중입니다.
-            </p>
-          </div>
-          <a
-            class="feature-extension-link"
-            href="/features/tenant-inquiry-response"
-            >세입자 문의 대응 베타 보기</a
-          >
         </div>
       </div>
     </section>
@@ -645,61 +648,113 @@
       </div>
     </section>
 
+    <section class="section beta-features-section" id="beta-features">
+      <div class="section-inner">
+        <div class="section-label">베타 기능</div>
+        <h2>준비 중인 새 기능</h2>
+        <p class="section-desc">입실 기록과 반복 문의 자동화 기능의 베타 참여자를 모집중입니다.</p>
+        <div class="feature-extension">
+          <div>
+            <span class="feature-extension-label">베타 기능 · 입실 기록</span>
+            <h3>입실 전 방 상태를 빠르게 찾도록</h3>
+            <p>
+              입실 전 방 상태를 호실과 위치별로 남겨두고, 퇴실 정산 때 필요한
+              기록을 빠르게 찾는 기능을 함께 다듬고 있습니다.
+            </p>
+          </div>
+          <a
+            class="feature-extension-link"
+            href="/features/move-out-dispute"
+            >입실 기록 기능 살펴보기</a
+          >
+        </div>
+        <div class="feature-extension">
+          <div>
+            <span class="feature-extension-label">베타 기능 · 반복 문의</span>
+            <h3>반복 문의는 자동 응대하고, 중요한 문의만 확인하도록</h3>
+            <p>
+              계좌·주차·분리수거처럼 답이 정해진 문의는 등록한 답변으로 안내하고,
+              판단이 필요한 문의만 임대인에게 알려주는 기능을 개발 중입니다.
+            </p>
+          </div>
+          <a
+            class="feature-extension-link"
+            href="/features/tenant-inquiry-response"
+            >문의 응대 자동화 알아보기</a
+          >
+        </div>
+      </div>
+    </section>
+
     <section class="section section-alt" id="faq">
       <div class="section-inner">
         <div class="faq-head">
-          <div class="section-label">FAQ</div>
-          <h2>가장 많이 묻는 질문</h2>
-          <p class="section-desc">
-            랜디는 월세 입금 확인 및 미납 안내처럼 매달 반복되는
-            관리 업무를 줄이는 데 집중합니다.
-          </p>
+          <div class="section-label">자주 묻는 질문</div>
+          <h2>랜디에 대해 궁금한 점</h2>
+          <p class="section-desc">랜디의 기능과 이용 방법을 확인해보세요.</p>
         </div>
         <div class="faq-list">
           <details class="faq-item" open>
             <summary>랜디는 어떤 임대인에게 적합한가요?</summary>
             <p>
-              원룸·오피스텔·상가처럼 여러 호실의 월세 입금 확인과 수납을 직접
-              처리하는 소규모 임대인에게 적합합니다. 중·대규모 임대인은 대개
-              중개사나 관리업체를 통해 수납과 민원을 처리하기 때문에, 랜디는
-              직접 관리하는 임대인의 반복 업무를 줄이는 데 집중합니다.
+              원룸·오피스텔·상가처럼 여러 호실의 월세 수납과 세입자 연락을 직접 관리하는 임대인에게 적합합니다. 건물과 호실별로 계약 정보, 월별 납부 내역, 미납 상태를 한곳에서 확인할 수 있습니다.
             </p>
           </details>
           <details class="faq-item">
-            <summary>월세 미납은 어떻게 확인하나요?</summary>
+            <summary>아이폰과 Android에서 같은 기능을 사용할 수 있나요?</summary>
             <p>
-              세입자와 호실, 월세, 납입일을 등록하면 랜디가 Android 은행 입금
-              알림을 기기에서 분석해 월세 납부 후보를 정리합니다. 사용자가 후보를
-              확인하면 확정한 납부 내역과 등록된 납입일을 기준으로 이번 달 상태를
-              확인할 수 있습니다.
+              건물·호실·세입자 관리와 납부 내역 직접 등록은 Android와 iOS에서 모두 이용할 수 있습니다. 은행 앱의 입금 알림을 분석하는 자동 기록은 Android에서 지원합니다. iOS에서는 납부 내역을 직접 등록해 수납 현황을 관리합니다.
             </p>
           </details>
           <details class="faq-item">
-            <summary>세입자에게 미납 안내를 보낼 수 있나요?</summary>
+            <summary>월세 납부 내역은 어떻게 기록되나요?</summary>
             <p>
-              미납 안내 문구를 직접 작성하시지 않아도 정해진 템플릿을 바탕으로
-              세입자에게 부담 없이 안내할 수 있도록 준비하고 있습니다.
+              Android에서는 지원 은행 앱의 입금 알림을 분석하고, 입금자·금액·납부월이 등록 정보와 일치하는 내역을 자동으로 기록합니다. 자동으로 연결되지 않는 입금이나 현금 납부는 내역을 확인한 뒤 직접 등록할 수 있습니다. 등록된 납부 내역은 앱에서 확인하고 수정할 수 있습니다.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>어떤 은행의 입금 알림을 지원하나요?</summary>
+            <p>
+              KB국민은행, 신한은행, 우리은행, 하나은행, NH농협, 카카오뱅크, 케이뱅크 등 지원 은행 앱의 입금 알림을 분석합니다. 같은 은행이어도 사용하는 앱이나 알림 형식에 따라 인식 여부가 달라질 수 있습니다. 자동으로 기록되지 않은 내역은 직접 등록할 수 있습니다.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>자동 기록을 사용하려면 어떤 권한이 필요한가요?</summary>
+            <p>
+              Android에서 은행 앱의 입금 알림을 켜고, 랜디에 알림 접근 권한을 허용해야 합니다. 알림 접근을 허용하지 않아도 납부 내역을 직접 등록할 수 있습니다. 납부일·계약 만기 등 랜디의 안내 알림을 받으려면 앱 알림도 허용해주세요.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>세입자에게 미납 안내 문자를 보낼 수 있나요?</summary>
+            <p>
+              세입자를 선택하고 안내 문구를 준비하면, 수신자와 내용이 채워진 기기의 기본 문자 앱이 열립니다. 내용을 확인한 뒤 사용자가 직접 발송합니다. iOS에서는 수신자별로 문자 작성 화면이 열리며, 문자 요금은 통신사 요금제에 따라 발생할 수 있습니다.
             </p>
           </details>
           <details class="faq-item">
             <summary>월세 수납 관리는 무료인가요?</summary>
             <p>
-              월세 수납 관리 기능은 무료로 제공할 예정입니다. 향후 AI 자동화 등
-              고도화된 기능은 별도 유료 플랜으로 제공될 수 있습니다.
+              현재 건물·호실 및 세입자 등록, 월세 수납 관리, 문자 안내 준비 등 기본 기능은 모두 무료입니다. 문자는 기기의 문자 앱을 통해 발송되며, 통신사 요금제에 따라 별도 요금이 발생할 수 있습니다.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>입실 기록과 반복 문의 자동화도 바로 사용할 수 있나요?</summary>
+            <p>
+              입실 기록과 반복 문의 자동화는 앱의 기본 기능과 별도로 베타 참여를 신청하는 기능입니다. 각 기능 소개 페이지에서 베타 안내를 신청할 수 있습니다.
             </p>
           </details>
         </div>
+        <p class="faq-contact">더 궁금한 점이 있으신가요? <a href="mailto:support.landy@gmail.com">랜디에 문의하기</a></p>
       </div>
     </section>
 
     <section class="beta-section download-section" id="download">
       <span id="beta" class="section-anchor" aria-hidden="true"></span>
       <h2>
-        매달 월세 관리,<br />이제 <span class="brand-highlight">랜디</span>와
-        더 간단하게.
+        반복되는 관리 업무,<br />이제 <span class="brand-highlight">랜디</span>로 간편하게
       </h2>
       <p class="section-desc">
-        지금 랜디를 사용해보세요!
+        내 기기에 맞는 스토어에서 다운로드하고<br />
+        무료로 시작해보세요!
       </p>
 
       <div class="store-cta">
@@ -726,17 +781,6 @@
           >
             <img src="/assets/google-play-badge.svg" alt="Google Play에서 다운로드" width="135" height="40" />
           </a>
-        </div>
-      </div>
-      <div class="brand-identity" aria-label="랜디 브랜드">
-        <div class="brand-identity-inner">
-          <div class="brand-identity-mark" aria-hidden="true">
-            <img src="/assets/icon.svg" alt="" />
-          </div>
-          <div class="brand-identity-name">Landy.</div>
-          <p class="brand-identity-tagline">
-            임대인의 시간을 아껴주는 월세관리 자동화 앱
-          </p>
         </div>
       </div>
     </section>

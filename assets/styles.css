@@ -809,28 +809,6 @@ h2 {
   font-size: 15px;
   line-height: 1.7;
 }
-.pain-bridge {
-  position: relative;
-  margin-top: 26px;
-  padding: 20px 0 0 48px;
-  border-top: 1px solid var(--line);
-  color: var(--navy);
-  font-size: 21px;
-  font-weight: 800;
-  line-height: 1.55;
-}
-.pain-bridge::before {
-  content: "“";
-  position: absolute;
-  top: 12px;
-  left: 0;
-  color: var(--blue);
-  font-family: Georgia, serif;
-  font-size: 46px;
-  font-weight: 700;
-  line-height: 1;
-}
-
 .how-layout {
   width: min(1120px, 100%);
   display: grid;
@@ -978,14 +956,9 @@ h2 {
 }
 .feature-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  margin-bottom: 34px;
-}
-.feature-num {
-  color: var(--text-light);
-  font-size: 13px;
-  font-weight: 800;
+  margin-bottom: 20px;
 }
 .feature-icon {
   display: inline-flex;
@@ -1029,14 +1002,18 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 28px;
-  margin-top: 18px;
-  padding: 24px 26px;
+  gap: 32px;
+  margin-top: 20px;
+  padding: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
     linear-gradient(90deg, rgba(234, 242, 255, 0.9), rgba(255, 255, 255, 0.96)),
     #fff;
+}
+.feature-extension > div {
+  flex: 1;
+  min-width: 0;
 }
 .feature-extension-label {
   display: block;
@@ -1063,17 +1040,21 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
+  width: 216px;
+  max-width: 100%;
+  min-height: 48px;
   flex: 0 0 auto;
-  padding: 0 18px;
+  padding: 12px 18px;
   border: 1px solid #1d4ed8;
   border-radius: 8px;
   background: var(--blue);
   color: #fff;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: normal;
   transition:
     background 0.2s,
     transform 0.2s;
@@ -2264,50 +2245,6 @@ h2 {
   flex: 0 0 auto;
 }
 
-.brand-identity {
-  position: relative;
-  min-height: 500px;
-  margin-top: 92px;
-  padding: 46px 40px 0;
-  color: #fff;
-}
-.brand-identity-inner {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  justify-items: center;
-  align-content: center;
-  min-height: 392px;
-  text-align: center;
-}
-.brand-identity-mark {
-  display: grid;
-  place-items: center;
-  width: 112px;
-  height: 112px;
-  color: rgba(255, 255, 255, 0.96);
-}
-.brand-identity-mark img {
-  display: block;
-  width: 104px;
-  height: 104px;
-  filter: brightness(0) invert(1);
-}
-.brand-identity-name {
-  margin-top: 8px;
-  color: #fff;
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 0;
-}
-.brand-identity-tagline {
-  margin-top: 36px;
-  color: rgba(255, 255, 255, 0.66);
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.45;
-}
 
 footer {
   background: var(--navy);
@@ -3023,7 +2960,7 @@ footer .logo {
   .feature-extension {
     align-items: flex-start;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
   }
   .seo-section {
     padding: 72px 24px;
@@ -3272,14 +3209,6 @@ footer .logo {
   .pain-card::before {
     left: 20px;
   }
-  .pain-bridge {
-    padding-left: 38px;
-    font-size: 18px;
-  }
-  .pain-bridge::before {
-    top: 14px;
-    font-size: 38px;
-  }
   .pain-index {
     margin-bottom: 16px;
   }
@@ -3289,7 +3218,9 @@ footer .logo {
   .feature-flow {
     grid-template-columns: 1fr;
     gap: 0;
-    margin: -8px 0 22px;
+    width: max-content;
+    max-width: 100%;
+    margin: -8px auto 22px;
   }
   .feature-flow-step {
     grid-template-columns: 34px 1fr;
@@ -3323,10 +3254,10 @@ footer .logo {
     border-bottom: 0;
   }
   .feature-top {
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
   .feature-extension {
-    padding: 22px 20px;
+    padding: 24px 20px;
   }
   .feature-extension h3 {
     font-size: 18px;
@@ -3349,30 +3280,6 @@ footer .logo {
   .btn-beta {
     justify-content: center;
     width: 100%;
-  }
-  .brand-identity {
-    min-height: 460px;
-    margin-top: 72px;
-    padding: 38px 18px 0;
-  }
-  .brand-identity-inner {
-    min-height: 384px;
-  }
-  .brand-identity-mark {
-    width: 88px;
-    height: 88px;
-  }
-  .brand-identity-mark img {
-    width: 84px;
-    height: 84px;
-  }
-  .brand-identity-name {
-    margin-top: 8px;
-    font-size: 42px;
-  }
-  .brand-identity-tagline {
-    margin-top: 30px;
-    font-size: 14px;
   }
   .home-page .hero {
     padding: 55px 20px 64px;
@@ -3725,6 +3632,16 @@ main[id],
   outline-offset: 4px;
   border-radius: 6px;
 }
+.feature-flow-note {
+  margin: -6px 0 26px;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+.beta-features-section .section-desc {
+  margin-bottom: 28px;
+}
 .beta-hero-label {
   display: inline-flex;
   align-items: center;
@@ -3737,6 +3654,18 @@ main[id],
   font-size: 13px;
   font-weight: 700;
   line-height: 1.5;
+}
+.faq-contact {
+  margin-top: 26px;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+.faq-contact a {
+  display: inline-block;
+  padding: 8px 0;
+  color: var(--blue);
+  font-weight: 700;
+  text-underline-offset: 3px;
 }
 .download-section {
   position: relative;

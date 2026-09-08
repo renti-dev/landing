@@ -8,7 +8,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const indexPath = resolve(root, "index.html");
 const html = readFileSync(indexPath, "utf8");
 const canonicalOrigin = "https://www.landy.co.kr";
-const expectedTagline = "임대인의 시간을 아껴주는 월세관리 자동화 앱";
+const expectedTagline = "임대인의 시간을 아껴주는 임대관리 자동화 앱";
 const expectedTitle = "랜디 | 임대인의 시간을 아껴주는 월세관리 자동화 앱";
 const publicPages = [
   ["index.html", "/"],
@@ -285,26 +285,21 @@ test("public pages do not preload the full Pretendard variable font", () => {
   }
 });
 
-test("rent collection copy keeps user confirmation as the final boundary", () => {
+test("rent collection copy distinguishes matched automatic records from manual entry", () => {
   const rentCollectionHtml = readFileSync(
     resolve(root, "features/rent-collection.html"),
     "utf8",
   );
 
-  assert.match(rentCollectionHtml, /최종 등록은\s*사용자가 확인합니다/);
-  assert.doesNotMatch(rentCollectionHtml, /월세 수납 확인을 자동화/);
+  assert.match(rentCollectionHtml, /Android에서는 입금자·금액·납부월이 등록 정보와 일치하는 내역을 자동으로 기록합니다/);
+  assert.match(rentCollectionHtml, /자동으로 연결되지 않는 입금이나 현금 납부는 내역을 확인한 뒤 직접 등록/);
+  assert.match(rentCollectionHtml, /iOS에서는 납부 내역을 직접 등록/);
 });
 
-test("home page displays the same Landy tagline as its metadata", () => {
+test("home page displays the requested rental-management tagline", () => {
   assert.match(
     html,
     new RegExp(`<p class="hero-eyebrow">${expectedTagline}</p>`),
-  );
-  assert.match(
-    html,
-    new RegExp(
-      `<p class="brand-identity-tagline">\\s*${expectedTagline}\\s*</p>`,
-    ),
   );
   assert.doesNotMatch(html, /건물주를 위한 월세 수납 자동화 앱/);
 });
