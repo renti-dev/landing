@@ -1221,18 +1221,6 @@ h2 {
   font-size: 14px;
   line-height: 1.65;
 }
-.seo-cta {
-  background: var(--navy);
-  color: #fff;
-  text-align: center;
-}
-.seo-cta h2 {
-  color: #fff;
-}
-.seo-cta .section-desc {
-  margin: 0 auto 28px;
-  color: #cbd5e1;
-}
 
 .inquiry-page {
   background: #fff;
