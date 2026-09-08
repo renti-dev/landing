@@ -251,22 +251,14 @@
         </div>
       </section>
 
-      <section class="beta-section inquiry-beta-section" id="beta">
-        <div
-          class="section-label beta-status-badge"
-          aria-label="베타 테스터 모집 중, 현재 신청 가능"
-        >
-          <span class="beta-status-copy">베타 테스터 모집 중</span>
-          <span class="beta-status-divider" aria-hidden="true"></span>
-          <span class="beta-status-state">현재 신청 가능</span>
-        </div>
+      <section class="beta-section inquiry-beta-section beta-signup" id="beta">
+        <p class="section-label">베타 참여자 모집 중</p>
         <h2>
-          세입자 문의 대응,<br />이제 <span class="brand-highlight">랜디</span>가
-          대신합니다.
+          문의 응대 자동화를<br />먼저 만나보세요
         </h2>
         <p class="section-desc">
-          다가구·다세대 관리하시는 임대인분이라면, 전화번호를 남기고
-          먼저 써보세요.
+          세입자 문의를 직접 받는 임대인의 의견을 기다립니다.
+          연락처를 남겨주시면 베타 참여 방법을 안내해드립니다.
         </p>
 
         <div class="form-wrap">
@@ -279,7 +271,7 @@
             data-feature-interest="tenant_inquiry_automation"
             novalidate
           >
-            <label class="sr-only" for="contactInput">전화번호</label>
+            <label class="signup-label" for="contactInput">안내받을 휴대전화 번호</label>
             <div class="email-input-wrap">
               <span class="mail-icon" aria-hidden="true">
                 <svg
@@ -306,11 +298,12 @@
                 id="contactInput"
                 name="phone"
                 autocomplete="tel-national"
+                aria-describedby="formMessage"
                 required
               />
             </div>
             <button class="btn-beta" id="submitButton" type="submit">
-              <span data-submit-label>신청하기</span>
+              <span data-submit-label>베타 신청하기</span>
               <svg
                 width="16"
                 height="16"
@@ -328,8 +321,8 @@
           </form>
         </div>
         <p class="form-message" id="formMessage" aria-live="polite">
-          전화번호를 제출하면 베타 안내 연락 수신에 동의한 것으로 간주되며,
-          이외의 용도로는 사용되지 않습니다.
+          신청하시면 베타 안내 연락 수신에 동의합니다.
+          전화번호는 베타 안내에만 사용합니다.
         </p>
       </section>
     </main>

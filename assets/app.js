@@ -4,6 +4,9 @@ const submitButton = document.getElementById("submitButton");
 const submitButtonLabel = submitButton
   ? submitButton.querySelector("[data-submit-label]")
   : null;
+const defaultSubmitButtonText = submitButtonLabel
+  ? submitButtonLabel.textContent
+  : "신청하기";
 const formMessage = document.getElementById("formMessage");
 const defaultMessage = formMessage ? formMessage.textContent : "";
 const signupSource = (form && form.dataset.source) || "rent";
@@ -274,6 +277,7 @@ if (form) {
     const contact = contactInput.value.trim();
 
     if (!contact) {
+      contactInput.setAttribute("aria-invalid", "true");
       sendAnalyticsEvent("beta_apply_fail", {
         reason: "missing_contact",
         source: signupSource,
@@ -286,6 +290,7 @@ if (form) {
     const contactPayload = getContactPayload(contact);
 
     if (!contactPayload) {
+      contactInput.setAttribute("aria-invalid", "true");
       sendAnalyticsEvent("beta_apply_fail", {
         reason: "validation_error",
         source: signupSource,
@@ -322,6 +327,7 @@ if (form) {
       contactInputStarted = false;
       contactInput.disabled = true;
       submitButton.disabled = true;
+      setSubmitButtonText("신청 완료");
       sendAnalyticsEvent("beta_apply_success", {
         method: contactPayload.method,
         source: signupSource,
@@ -346,12 +352,13 @@ if (form) {
     } finally {
       if (!formMessage.classList.contains("success")) {
         submitButton.disabled = false;
-        setSubmitButtonText("신청하기");
+        setSubmitButtonText(defaultSubmitButtonText);
       }
     }
   });
 
   contactInput.addEventListener("input", () => {
+    contactInput.removeAttribute("aria-invalid");
     if (!contactInputStarted) {
       contactInputStarted = true;
       sendAnalyticsEvent("beta_contact_input_start", {
