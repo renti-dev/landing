@@ -3406,6 +3406,8 @@ footer .logo {
     grid-row: auto;
   }
   .footer-legal {
+    align-self: stretch;
+    margin-top: 6px;
     justify-items: start;
     text-align: left;
   }
