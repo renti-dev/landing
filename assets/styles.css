@@ -3799,11 +3799,19 @@ main[id],
   cursor: default;
   transform: none;
 }
-.beta-signup .form-message {
+.beta-signup .form-message,
+.beta-signup .signup-note {
   max-width: 560px;
   color: #cbd5e1;
   font-size: 14px;
   line-height: 1.7;
+}
+.beta-signup .signup-note {
+  margin: 16px auto 0;
+}
+.beta-signup .form-message:empty {
+  min-height: 0;
+  margin-top: 0;
 }
 .beta-signup .form-message.error {
   color: #fca5a5;
