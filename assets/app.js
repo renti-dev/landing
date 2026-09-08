@@ -5,9 +5,6 @@ const submitButtonLabel = submitButton
   ? submitButton.querySelector("[data-submit-label]")
   : null;
 const formMessage = document.getElementById("formMessage");
-const floatingBetaCta = document.querySelector(".floating-beta-cta");
-const firstContentSection = document.querySelector(".hero + .section");
-const betaSection = document.getElementById("beta");
 const defaultMessage = formMessage ? formMessage.textContent : "";
 const signupSource = (form && form.dataset.source) || "rent";
 const campaignGoal = (form && form.dataset.campaignGoal) || "demand_validation";
@@ -252,18 +249,6 @@ document.querySelectorAll("[data-beta-location]").forEach((link) => {
     }
   });
 });
-
-function updateFloatingCta() {
-  if (!floatingBetaCta || !firstContentSection || !betaSection) return;
-  const showCta =
-    firstContentSection.getBoundingClientRect().top <=
-      window.innerHeight - 80 &&
-    betaSection.getBoundingClientRect().top > window.innerHeight - 120;
-  floatingBetaCta.classList.toggle("is-visible", showCta);
-}
-updateFloatingCta();
-window.addEventListener("scroll", updateFloatingCta, { passive: true });
-window.addEventListener("resize", updateFloatingCta);
 
 if (form) {
   if ("IntersectionObserver" in window) {

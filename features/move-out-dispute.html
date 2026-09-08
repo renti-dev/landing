@@ -87,16 +87,31 @@
     </script>
   </head>
   <body class="feature-page dispute-page">
-    <nav class="page-nav dispute-nav" aria-label="메인 메뉴">
-      <a class="logo logo-home" href="/" aria-label="랜디 홈">
-        <span class="logo-mark" aria-hidden="true">
-          <img src="/assets/icon.svg" alt="" />
-        </span>
-        <span class="logo-word">랜디</span>
-      </a>
-      <a class="nav-cta" href="#beta" data-beta-location="nav">신청하기</a>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    <nav class="site-nav" aria-label="메인 메뉴" data-site-nav>
+      <div class="site-nav-inner">
+        <a class="logo logo-home" href="/" aria-label="랜디 홈">
+          <span class="logo-mark" aria-hidden="true">
+            <img src="/assets/icon.svg" alt="" />
+          </span>
+          <span class="logo-word">랜디</span>
+        </a>
+        <div class="site-nav-links" id="site-menu">
+          <a href="/#features">기능 소개</a>
+          <a href="/#how">사용 화면</a>
+          <a href="/#faq">자주 묻는 질문</a>
+        </div>
+        <div class="site-nav-actions">
+          <a class="nav-cta" href="#beta" data-beta-location="nav">베타 신청</a>
+          <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="site-menu" aria-label="메뉴 열기" hidden>
+            <span class="menu-icon" aria-hidden="true"></span>
+            <span>메뉴</span>
+          </button>
+        </div>
+      </div>
     </nav>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="dispute-hero">
         <img
           class="dispute-hero-image"
@@ -111,6 +126,7 @@
             <span>퇴실 분쟁 대비</span>
           </div>
           <p class="dispute-kicker">입실 전 사진과 메모</p>
+          <p class="beta-hero-label">베타 테스터 모집 중</p>
           <h1>"원래 이랬어요"<br />퇴실 날 듣지 않으려면</h1>
           <p class="dispute-hero-copy">
             입실 전 방 상태를 호실과 위치별로 남겨두고, 퇴실 정산 때
@@ -364,6 +380,7 @@
       </div>
     </footer>
 
+    <script src="../assets/navigation.js" defer></script>
     <script src="../assets/app.js" defer></script>
   </body>
 </html>

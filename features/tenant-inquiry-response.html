@@ -90,17 +90,32 @@
     </script>
   </head>
   <body class="feature-page inquiry-page">
-    <nav class="page-nav" aria-label="메인 메뉴">
-      <a class="logo logo-home" href="/" aria-label="랜디 홈">
-        <span class="logo-mark" aria-hidden="true">
-          <img src="/assets/icon.svg" alt="" />
-        </span>
-        <span class="logo-word">랜디</span>
-      </a>
-      <a class="nav-cta" href="#beta" data-beta-location="nav">자동화 신청하기</a>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    <nav class="site-nav" aria-label="메인 메뉴" data-site-nav>
+      <div class="site-nav-inner">
+        <a class="logo logo-home" href="/" aria-label="랜디 홈">
+          <span class="logo-mark" aria-hidden="true">
+            <img src="/assets/icon.svg" alt="" />
+          </span>
+          <span class="logo-word">랜디</span>
+        </a>
+        <div class="site-nav-links" id="site-menu">
+          <a href="/#features">기능 소개</a>
+          <a href="/#how">사용 화면</a>
+          <a href="/#faq">자주 묻는 질문</a>
+        </div>
+        <div class="site-nav-actions">
+          <a class="nav-cta" href="#beta" data-beta-location="nav">베타 신청</a>
+          <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="site-menu" aria-label="메뉴 열기" hidden>
+            <span class="menu-icon" aria-hidden="true"></span>
+            <span>메뉴</span>
+          </button>
+        </div>
+      </div>
     </nav>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="inquiry-hero inquiry-story-hero">
         <div class="inquiry-hero-inner">
           <div class="inquiry-hero-copy">
@@ -109,7 +124,8 @@
               <span>/</span>
               <span>세입자 문의 대응</span>
             </div>
-            <h1>사소한 문의에<br />매번 답장하고 있나요?</h1>
+            <p class="beta-hero-label">베타 테스터 모집 중</p>
+          <h1>사소한 문의에<br />매번 답장하고 있나요?</h1>
             <p class="hero-sub">
               반복되는 사소한 문의는 등록된 양식대로 세입자에게 자동으로 답변합니다. <br/> 중요한 문의만 따로 임대인에게 전달합니다.
             </p>
@@ -379,6 +395,7 @@
       </div>
     </footer>
 
+    <script src="../assets/navigation.js" defer></script>
     <script src="../assets/app.js" defer></script>
   </body>
 </html>

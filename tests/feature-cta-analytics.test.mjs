@@ -13,7 +13,7 @@ const featurePages = [
   "features/overdue-notice.html",
 ];
 
-test("released feature pages wire hero and bottom store CTAs to analytics", () => {
+test("released feature pages wire hero, bottom, and floating store CTAs to analytics", () => {
   for (const relativePath of featurePages) {
     const html = readFileSync(resolve(root, relativePath), "utf8");
     const trackedAnchors = [...html.matchAll(/<a\b[^>]*data-beta-location="([^"]+)"[^>]*>/g)];
@@ -23,7 +23,7 @@ test("released feature pages wire hero and bottom store CTAs to analytics", () =
     assert.match(html, /src="\.\.\/assets\/app\.js" defer/);
     assert.deepEqual(
       trackedAnchors.map((match) => match[1]),
-      ["hero", "feature_bottom"],
+      ["hero", "hero", "feature_bottom", "feature_bottom", "floating_bottom", "floating_bottom"],
       relativePath,
     );
     assert.doesNotMatch(

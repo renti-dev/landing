@@ -147,16 +147,32 @@
     </script>
   </head>
   <body class="home-page">
-    <nav aria-label="메인 메뉴">
-      <div class="logo" aria-label="랜디">
-        <span class="logo-mark" aria-hidden="true">
-          <img src="/assets/icon.svg" alt="" />
-        </span>
-        <span class="logo-word">랜디</span>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    <nav class="site-nav" aria-label="메인 메뉴" data-site-nav>
+      <div class="site-nav-inner">
+        <a class="logo logo-home" href="/" aria-label="랜디 홈">
+          <span class="logo-mark" aria-hidden="true">
+            <img src="/assets/icon.svg" alt="" />
+          </span>
+          <span class="logo-word">랜디</span>
+        </a>
+        <div class="site-nav-links" id="site-menu">
+          <a href="/#features">기능 소개</a>
+          <a href="/#how">사용 화면</a>
+          <a href="/#faq">자주 묻는 질문</a>
+        </div>
+        <div class="site-nav-actions">
+          <a class="nav-download" href="#download">앱 다운로드</a>
+          <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="site-menu" aria-label="메뉴 열기" hidden>
+            <span class="menu-icon" aria-hidden="true"></span>
+            <span>메뉴</span>
+          </button>
+        </div>
       </div>
     </nav>
 
-    <main>
+    <main id="main-content" tabindex="-1">
     <section class="hero">
       <p class="hero-eyebrow">임대인의 시간을 아껴주는 월세관리 자동화 앱</p>
       <h1>매달 월세 입금 확인,<br /><em>직접 하고 계신가요?</em></h1>
@@ -452,7 +468,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="features">
       <div class="section-inner">
         <div class="feature-head">
           <div>
@@ -678,7 +694,8 @@
       </div>
     </section>
 
-    <section class="beta-section" id="beta">
+    <section class="beta-section download-section" id="download">
+      <span id="beta" class="section-anchor" aria-hidden="true"></span>
       <h2>
         매달 월세 관리,<br />이제 <span class="brand-highlight">랜디</span>와
         더 간단하게.
@@ -758,33 +775,27 @@
       </div>
     </footer>
 
-    <aside class="floating-beta-cta" aria-label="앱 다운로드">
+
+    <aside class="mobile-store-cta" data-mobile-store-cta aria-label="앱 다운로드" hidden>
       <div class="store-badge-pair">
-        <a
-          class="store-badge download-store-badge"
+        <a class="store-badge download-store-badge"
           href="https://apps.apple.com/kr/app/id6804934479"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-store="app-store"
-          data-beta-location="floating_bottom"
-          aria-label="App Store에서 랜디 다운로드"
-        >
+          target="_blank" rel="noopener noreferrer"
+          data-store="app-store" data-beta-location="floating_bottom"
+          aria-label="App Store에서 랜디 다운로드">
           <img src="/assets/app-store-badge.svg" alt="App Store에서 다운로드" width="135" height="40" />
         </a>
-        <a
-          class="store-badge download-store-badge"
+        <a class="store-badge download-store-badge"
           href="https://play.google.com/store/apps/details?id=com.landy.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-store="google-play"
-          data-beta-location="floating_bottom"
-          aria-label="Google Play에서 랜디 다운로드"
-        >
+          target="_blank" rel="noopener noreferrer"
+          data-store="google-play" data-beta-location="floating_bottom"
+          aria-label="Google Play에서 랜디 다운로드">
           <img src="/assets/google-play-badge.svg" alt="Google Play에서 다운로드" width="135" height="40" />
         </a>
       </div>
     </aside>
 
+    <script src="assets/navigation.js" defer></script>
     <script src="assets/app.js" defer></script>
   </body>
 </html>
