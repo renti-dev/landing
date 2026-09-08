@@ -4,6 +4,16 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/features/small-landlord-app",
+      "destination": "/features/room-management",
+      "permanent": true
+    },
+    {
+      "source": "/features/small-landlord-app.html",
+      "destination": "/features/room-management",
+      "permanent": true
+    },
+    {
       "source": "/index.php",
       "destination": "https://www.landy.co.kr/",
       "permanent": true

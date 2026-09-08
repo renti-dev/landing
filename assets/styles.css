@@ -1109,27 +1109,6 @@ h2 {
   width: min(1080px, 100%);
   margin: 0 auto;
 }
-.breadcrumb {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  margin-bottom: 26px;
-  color: #93c5fd;
-  font-size: 13px;
-  font-weight: 700;
-}
-.breadcrumb a {
-  color: #bfdbfe;
-  text-decoration: none;
-}
-.breadcrumb a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.breadcrumb span {
-  color: #64748b;
-}
 .seo-hero h1 {
   max-width: 820px;
   margin-bottom: 18px;
@@ -1291,9 +1270,6 @@ h2 {
 }
 .inquiry-hero-copy {
   min-width: 0;
-}
-.inquiry-hero .breadcrumb {
-  margin-bottom: 28px;
 }
 .inquiry-hero h1 {
   max-width: 720px;
@@ -2543,9 +2519,6 @@ footer .logo {
   margin: 0 auto;
   padding: 78px 40px 68px;
 }
-.dispute-breadcrumb {
-  margin-bottom: 30px;
-}
 .dispute-kicker {
   margin-bottom: 16px;
   color: #9fc6ff;
@@ -3076,9 +3049,6 @@ footer .logo {
   .dispute-hero-inner {
     padding: 58px 20px 54px;
   }
-  .dispute-breadcrumb {
-    margin-bottom: 22px;
-  }
   .dispute-kicker {
     margin-bottom: 12px;
     font-size: 14px;
@@ -3441,9 +3411,6 @@ footer .logo {
   .inquiry-hero-copy > * {
     max-width: 100%;
     min-width: 0;
-  }
-  .inquiry-hero .breadcrumb {
-    margin-bottom: 22px;
   }
   .inquiry-hero h1 {
     font-size: 36px;

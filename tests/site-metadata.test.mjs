@@ -20,7 +20,7 @@ const publicPages = [
   ],
   ["features/contract-expiry.html", "/features/contract-expiry"],
   ["features/move-out-dispute.html", "/features/move-out-dispute"],
-  ["features/small-landlord-app.html", "/features/small-landlord-app"],
+  ["features/room-management.html", "/features/room-management"],
   ["legal/privacy-policy.html", "/legal/privacy-policy"],
   ["legal/data-deletion.html", "/legal/data-deletion"],
 ];

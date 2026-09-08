@@ -8,7 +8,7 @@ import vm from "node:vm";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const featurePages = [
   "features/rent-collection.html",
-  "features/small-landlord-app.html",
+  "features/room-management.html",
   "features/contract-expiry.html",
   "features/overdue-notice.html",
 ];

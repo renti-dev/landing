@@ -8,7 +8,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const pages = [
   "index.html",
   "features/rent-collection.html",
-  "features/small-landlord-app.html",
+  "features/room-management.html",
   "features/contract-expiry.html",
   "features/overdue-notice.html",
   "features/move-out-dispute.html",
