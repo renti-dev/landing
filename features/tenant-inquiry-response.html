@@ -10,10 +10,10 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>세입자 문의 대응 자동화 | 랜디</title>
+    <title>세입자 문의 응대 자동화 베타 | 랜디</title>
     <meta
       name="description"
-      content="입금 계좌, 와이파이 비밀번호, 입주 안내처럼 반복되는 세입자 문의는 등록한 답변으로 안내하고 중요한 문의만 임대인에게 알려주는 랜디 기능 소개 페이지입니다."
+      content="반복 문의는 등록한 답변으로 안내하고 판단이 필요한 문의만 임대인에게 알려주는 기능을 개발 중입니다. 베타 참여자를 모집합니다."
     />
     <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#0b1730" />
@@ -26,10 +26,10 @@
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:site_name" content="랜디" />
-    <meta property="og:title" content="세입자 문의 대응 자동화 | 랜디" />
+    <meta property="og:title" content="세입자 문의 응대 자동화 베타 | 랜디" />
     <meta
       property="og:description"
-      content="반복 문의는 등록한 답변으로 안내하고, 확인이 필요한 문의만 임대인에게 알려드립니다."
+      content="반복 문의를 줄이는 랜디 문의 응대 자동화 기능을 개발 중입니다. 베타 참여자를 모집합니다."
     />
     <meta
       property="og:url"
@@ -46,10 +46,10 @@
       content="랜디 세입자 문의 대응 자동화 소개 이미지"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="세입자 문의 대응 자동화 | 랜디" />
+    <meta name="twitter:title" content="세입자 문의 응대 자동화 베타 | 랜디" />
     <meta
       name="twitter:description"
-      content="반복 문의는 등록한 답변으로 안내하고, 확인이 필요한 문의만 임대인에게 알려드립니다."
+      content="반복 문의를 줄이는 랜디 문의 응대 자동화 기능을 개발 중입니다. 베타 참여자를 모집합니다."
     />
     <meta
       name="twitter:image"
@@ -64,8 +64,8 @@
             "@type": "WebPage",
             "@id": "https://www.landy.co.kr/features/tenant-inquiry-response",
             "url": "https://www.landy.co.kr/features/tenant-inquiry-response",
-            "name": "세입자 문의 대응 자동화",
-            "description": "반복되는 세입자 문의를 등록한 답변으로 안내하고 중요한 문의만 알려주는 랜디 기능 소개 페이지입니다.",
+            "name": "세입자 문의 응대 자동화 베타",
+            "description": "반복 문의는 등록한 답변으로 안내하고 판단이 필요한 문의만 임대인에게 알려주는 기능을 개발 중이며 베타 참여자를 모집합니다.",
             "inLanguage": "ko-KR"
           }
         ]
@@ -102,57 +102,56 @@
       <section class="inquiry-hero inquiry-story-hero">
         <div class="inquiry-hero-inner">
           <div class="inquiry-hero-copy">
-            <p class="beta-hero-label">베타 테스터 모집 중</p>
-            <h1>사소한 문의에<br />매번 답장하고 있나요?</h1>
+            <p class="beta-hero-label">개발 중 · 베타 참여자 모집 중</p>
+            <h1>반복되는 문의에<br />매번 답장하고 있나요?</h1>
             <p class="hero-sub">
-              반복되는 사소한 문의는 등록된 양식대로 세입자에게 자동으로 답변합니다. <br/> 중요한 문의만 따로 임대인에게 전달합니다.
+              답이 정해진 문의는 등록한 답변으로 안내하고,
+              판단이 필요한 문의만 임대인에게 알려주는 기능을 개발 중입니다.
             </p>
             <div class="inquiry-hero-actions">
               <a
                 class="btn-inquiry-primary"
                 href="#beta"
                 data-beta-location="hero"
-                >반복 문의 자동화 신청하기</a
+                >문의 응대 베타 신청</a
               >
               <a class="btn-inquiry-secondary" href="#inquiry-details"
-                >자동화 방식 보기</a
+                >응대 방식 살펴보기</a
               >
             </div>
           </div>
           <div
             class="inquiry-visual"
             role="img"
-            aria-label="반복 문의 푸시알림 예시"
+            aria-label="반복되는 세입자 문의 예시: 입금 계좌, 주차 위치, 입주 안내, 분리수거 일정"
           >
+            <p class="inquiry-visual-caption" aria-hidden="true">반복되는 문의 예시</p>
             <div class="inquiry-push-stack" aria-hidden="true">
               <article class="inquiry-push-card">
-                <span class="inquiry-push-icon inquiry-push-icon-talk">TALK</span>
+                <span class="inquiry-push-icon inquiry-push-icon-chat"></span>
                 <div class="inquiry-push-content">
-                  <strong>입금 계좌를 까먹었어요</strong>
+                  <strong>입금 계좌 알려주세요</strong>
                   <span>오후 9:41</span>
                 </div>
-                <span class="inquiry-push-badge">3</span>
               </article>
               <article class="inquiry-push-card">
                 <span class="inquiry-push-icon inquiry-push-icon-chat"></span>
                 <div class="inquiry-push-content">
-                  <strong>전등 어떻게 고쳐요?</strong>
+                  <strong>주차는 어디에 하나요?</strong>
                   <span>오후 9:34</span>
                 </div>
-                <span class="inquiry-push-badge">2</span>
               </article>
               <article class="inquiry-push-card">
-                <span class="inquiry-push-icon inquiry-push-icon-talk">TALK</span>
+                <span class="inquiry-push-icon inquiry-push-icon-chat"></span>
                 <div class="inquiry-push-content">
                   <strong>입주 안내 부탁드려요</strong>
                   <span>오후 9:18</span>
                 </div>
-                <span class="inquiry-push-badge">1</span>
               </article>
               <article class="inquiry-push-card">
                 <span class="inquiry-push-icon inquiry-push-icon-chat"></span>
                 <div class="inquiry-push-content">
-                  <strong>분리수거는 언제죠?</strong>
+                  <strong>분리수거는 언제 하나요?</strong>
                   <span>오후 8:52</span>
                 </div>
               </article>
@@ -161,28 +160,21 @@
         </div>
       </section>
 
-      <section class="inquiry-brand-line">
-        <div class="section-inner inquiry-brand-line-inner">
-          <p>사소한 문의는 빠르게.</p>
-          <p>중요한 문의만 임대인에게.</p>
-        </div>
-      </section>
-
       <section class="inquiry-story-section" id="inquiry-details">
         <div class="section-inner inquiry-story-row">
           <div class="inquiry-story-copy">
-            <p class="seo-kicker">단순 문의</p>
-            <h2>정해진 답은<br />정해진 대로</h2>
+            <p class="seo-kicker">반복 문의 안내</p>
+            <h2>자주 묻는 질문에는<br />미리 등록한 답변으로</h2>
             <p>
-              계좌, 주차, 분리수거처럼 이미 답이 있는 질문은 임대인이 매번
-              답장하지 않아도 되게 합니다.
+              입금 계좌나 분리수거 일정처럼 답이 정해진 질문을 안내합니다.
+              임대인이 등록한 내용을 활용해 같은 답변을 반복하는 일을 줄이려 합니다.
             </p>
           </div>
-          <div class="inquiry-message-stack" aria-label="단순 문의 안내 예시">
+          <div class="inquiry-message-stack" aria-label="개발 중인 반복 문의 안내 예시">
             <article class="inquiry-alert-card">
-              <span class="inquiry-app-icon inquiry-app-talk">TALK</span>
+              <span class="inquiry-app-icon inquiry-message-icon-chat" aria-hidden="true"></span>
               <div>
-                <h3>입금 계좌를 까먹었어요</h3>
+                <h3>입금 계좌 알려주세요</h3>
                 <p>등록된 계좌 안내</p>
               </div>
               <strong>자동 안내</strong>
@@ -190,7 +182,7 @@
             <article class="inquiry-alert-card">
               <span class="inquiry-app-icon inquiry-message-icon-chat"></span>
               <div>
-                <h3>분리수거는 언제죠?</h3>
+                <h3>분리수거는 언제 하나요?</h3>
                 <p>건물 이용 안내</p>
               </div>
               <strong>자동 안내</strong>
@@ -203,9 +195,10 @@
         <div class="section-inner inquiry-story-row inquiry-story-row-reverse">
           <div class="inquiry-story-copy">
             <p class="seo-kicker">호실별 안내</p>
-            <h2>같은 건물이라도<br />답은 다를 수 있으니까</h2>
+            <h2>호실마다 다른 정보도<br />구분해서 안내하도록</h2>
             <p>
-              호실마다 다른 정보는 호실별로 구분해서 답합니다. 와이파이, 현관 비밀번호, 주차 위치처럼요.
+              와이파이 이용 정보나 지정 주차 위치처럼 호실마다 다른 내용을 등록하고,
+              해당 세입자에게 맞는 답변을 안내하도록 준비하고 있습니다.
             </p>
           </div>
           <div class="inquiry-room-card" aria-label="호실별 답변 예시">
@@ -231,11 +224,10 @@
       <section class="inquiry-story-section">
         <div class="section-inner inquiry-story-row">
           <div class="inquiry-story-copy">
-            <p class="seo-kicker">중요 문의</p>
-            <h2>위험한 자동 답변은<br />하지 않습니다</h2>
+            <p class="seo-kicker">임대인 확인이 필요한 문의</p>
+            <h2>판단이 필요한 문의는<br />임대인에게 전달하도록</h2>
             <p>
-              누수, 고장, 소음, 민원처럼 상황 판단이 필요한 문의는 자동 응답보다
-              임대인 확인을 우선합니다.
+              현장 확인이나 임대인의 결정이 필요한 문의를 구분해 알려주는 기능을 개발 중입니다.
             </p>
           </div>
           <div class="inquiry-message-stack" aria-label="중요 문의 분류 예시">

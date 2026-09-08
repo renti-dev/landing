@@ -1286,14 +1286,12 @@ h2 {
   background: #fff;
 }
 .inquiry-hero.inquiry-story-hero {
-  background:
-    linear-gradient(90deg, rgba(3, 7, 18, 0.96), rgba(6, 16, 31, 0.84)),
-    #06101f;
+  background: var(--navy);
 }
 .inquiry-hero {
   position: relative;
   overflow: hidden;
-  padding: 76px 40px 88px;
+  padding: 76px 40px;
   background:
     linear-gradient(90deg, rgba(3, 7, 18, 0.94), rgba(6, 16, 31, 0.84)),
     #06101f;
@@ -1310,10 +1308,10 @@ h2 {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 430px);
-  gap: 56px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 48px;
   align-items: center;
-  width: min(1120px, 100%);
+  width: min(1100px, 100%);
   margin: 0 auto;
 }
 .inquiry-hero-copy {
@@ -1323,10 +1321,12 @@ h2 {
   max-width: 720px;
   margin-bottom: 22px;
   color: #fff;
-  font-size: 56px;
-  line-height: 1.16;
+  font-size: 48px;
+  line-height: 1.25;
   letter-spacing: 0;
   text-align: left;
+  word-break: keep-all;
+  text-wrap: balance;
 }
 .inquiry-hero h1 em {
   color: #60a5fa;
@@ -1342,7 +1342,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 .btn-inquiry-primary,
 .btn-inquiry-secondary {
@@ -1367,12 +1367,12 @@ h2 {
   border: 1px solid #1d4ed8;
   background: #2563eb;
   color: #fff;
-  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.38);
+  box-shadow: none;
 }
 .btn-inquiry-primary:hover {
   border-color: #1e40af;
   background: #1d4ed8;
-  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.46);
+  box-shadow: none;
   transform: translateY(-1px);
 }
 .btn-inquiry-secondary {
@@ -1406,17 +1406,21 @@ h2 {
 .inquiry-visual {
   justify-self: end;
   width: min(100%, 398px);
-  min-height: 340px;
-  padding: 34px 18px;
+  padding: 24px;
   overflow: visible;
   border: 1px solid rgba(147, 197, 253, 0.28);
   border-radius: 8px;
   background:
     radial-gradient(circle at 18% 12%, rgba(37, 99, 235, 0.22), transparent 30%),
     linear-gradient(180deg, #101827 0%, #020617 100%);
-  box-shadow: 0 34px 72px rgba(0, 0, 0, 0.46);
+  box-shadow: none;
   display: grid;
-  place-items: center;
+  gap: 18px;
+}
+.inquiry-visual-caption {
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 700;
 }
 .inquiry-push-stack {
   width: min(100%, 340px);
@@ -1434,14 +1438,14 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.68);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28);
+  box-shadow: none;
 }
 .inquiry-push-card:nth-child(2),
 .inquiry-push-card:nth-child(4) {
-  transform: translateX(14px);
+  transform: none;
 }
 .inquiry-push-card:nth-child(3) {
-  transform: translateX(-8px);
+  transform: none;
 }
 .inquiry-push-icon {
   display: inline-grid;
@@ -1462,7 +1466,7 @@ h2 {
 .inquiry-push-icon-chat,
 .inquiry-app-icon.inquiry-message-icon-chat {
   position: relative;
-  background: #4cd964;
+  background: #2563eb;
 }
 .inquiry-push-icon-chat::before,
 .inquiry-app-icon.inquiry-message-icon-chat::before {
@@ -1496,16 +1500,14 @@ h2 {
   color: #111827;
   font-size: 16px;
   font-weight: 800;
-  line-height: 1.25;
+  line-height: 1.4;
   letter-spacing: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-break: keep-all;
 }
 .inquiry-push-content span {
   justify-self: end;
   color: #6b7280;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1;
 }
@@ -1554,7 +1556,7 @@ h2 {
   letter-spacing: 0;
 }
 .inquiry-story-section {
-  padding: 92px 40px;
+  padding: 76px 40px;
   background: #fff;
 }
 .inquiry-story-section-alt {
@@ -1563,7 +1565,7 @@ h2 {
 .inquiry-story-row {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
-  gap: 64px;
+  gap: 48px;
   align-items: center;
 }
 .inquiry-story-row-reverse .inquiry-story-copy {
@@ -1575,10 +1577,12 @@ h2 {
 .inquiry-story-copy h2 {
   max-width: 560px;
   color: var(--navy);
-  font-size: clamp(36px, 4.6vw, 58px);
+  font-size: 38px;
   font-weight: 800;
-  line-height: 1.12;
+  line-height: 1.3;
   letter-spacing: 0;
+  word-break: keep-all;
+  text-wrap: balance;
 }
 .inquiry-story-copy p:not(.seo-kicker) {
   max-width: 500px;
@@ -1688,7 +1692,7 @@ h2 {
 .inquiry-alert-card p {
   margin-top: 4px;
   color: var(--text-muted);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.55;
 }
 .inquiry-alert-card strong {
@@ -1701,7 +1705,7 @@ h2 {
   border-radius: 999px;
   background: var(--blue-soft);
   color: var(--blue);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
   line-height: 1;
 }
@@ -2534,38 +2538,18 @@ footer .logo {
 }
 .dispute-hero {
   position: relative;
-  display: grid;
-  align-items: center;
-  min-height: calc(100svh - 112px);
   overflow: hidden;
-  background: #070b12;
+  padding: 76px 40px;
+  background: var(--navy);
   color: #fff;
 }
-.dispute-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background:
-    linear-gradient(90deg, #05070c 0%, rgba(5, 7, 12, 0.9) 34%, rgba(5, 7, 12, 0.44) 68%, rgba(5, 7, 12, 0.18) 100%),
-    linear-gradient(0deg, rgba(5, 7, 12, 0.86) 0%, rgba(5, 7, 12, 0.18) 42%, rgba(5, 7, 12, 0.45) 100%);
-  pointer-events: none;
-}
-.dispute-hero-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 68% center;
-  opacity: 0.86;
-}
 .dispute-hero-inner {
-  position: relative;
-  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 48px;
+  align-items: center;
   width: min(1100px, 100%);
   margin: 0 auto;
-  padding: 78px 40px 68px;
 }
 .dispute-kicker {
   margin-bottom: 16px;
@@ -2578,9 +2562,12 @@ footer .logo {
   max-width: 650px;
   margin-bottom: 20px;
   color: #fff;
-  font-size: 58px;
+  font-size: 48px;
+  line-height: 1.25;
   letter-spacing: 0;
   text-align: left;
+  word-break: keep-all;
+  text-wrap: balance;
 }
 .dispute-hero-copy {
   max-width: 580px;
@@ -2589,6 +2576,7 @@ footer .logo {
   font-size: 18px;
   line-height: 1.75;
   font-weight: 500;
+  word-break: keep-all;
 }
 .dispute-hero-actions {
   display: flex;
@@ -2596,21 +2584,69 @@ footer .logo {
   gap: 12px;
   align-items: center;
 }
+.dispute-hero-actions .btn-primary,
+.dispute-hero-actions .btn-ghost {
+  min-height: 54px;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-size: 16px;
+}
 .dispute-primary {
-  background: #1f6bff;
+  background: #2563eb;
   color: #fff;
   border: 1px solid #2f73ff;
-  box-shadow: 0 18px 38px rgba(31, 107, 255, 0.34);
+  box-shadow: none;
 }
 .dispute-primary:hover {
   background: #1559db;
   color: #fff;
-  box-shadow: 0 20px 44px rgba(31, 107, 255, 0.42);
+  box-shadow: none;
 }
 .dispute-ghost {
   border-color: rgba(255, 255, 255, 0.42);
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
+}
+.dispute-record-preview {
+  padding: 28px;
+  border: 1px solid #dbe5f3;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--navy);
+}
+.dispute-record-caption {
+  margin-bottom: 12px;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+.dispute-record-preview h2 {
+  margin-bottom: 22px;
+  font-size: 24px;
+}
+.dispute-record-preview dl {
+  display: grid;
+  gap: 12px;
+}
+.dispute-record-preview dl div {
+  padding: 18px;
+  border-radius: 8px;
+  background: var(--bg);
+}
+.dispute-record-preview dt {
+  font-size: 17px;
+  font-weight: 700;
+}
+.dispute-record-preview dd,
+.dispute-record-note {
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+.dispute-record-note {
+  margin-top: 18px;
+  font-size: 14px;
 }
 .dispute-hero-points {
   display: grid;
@@ -2644,7 +2680,7 @@ footer .logo {
   line-height: 1.5;
 }
 .dispute-section {
-  padding: 86px 40px;
+  padding: 76px 40px;
 }
 .dispute-section-alt {
   background: #f6f8fb;
@@ -2656,10 +2692,12 @@ footer .logo {
 .dispute-compact-title h2,
 .dispute-compact-copy h2 {
   color: var(--navy);
-  font-size: 54px;
+  font-size: 38px;
   font-weight: 800;
-  line-height: 1.12;
+  line-height: 1.3;
   letter-spacing: 0;
+  word-break: keep-all;
+  text-wrap: balance;
 }
 .dispute-compact-grid {
   display: grid;
@@ -2667,12 +2705,11 @@ footer .logo {
   gap: 14px;
 }
 .dispute-compact-card {
-  min-height: 210px;
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
-  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.05);
+  box-shadow: none;
 }
 .dispute-compact-card span {
   display: inline-flex;
@@ -2683,7 +2720,7 @@ footer .logo {
 }
 .dispute-compact-card h3 {
   color: var(--navy);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   line-height: 1.25;
 }
@@ -2697,7 +2734,7 @@ footer .logo {
 .dispute-compact-row {
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
-  gap: 64px;
+  gap: 48px;
   align-items: center;
 }
 .dispute-compact-copy p:not(.seo-kicker) {
@@ -2707,7 +2744,7 @@ footer .logo {
 .dispute-regret-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
-  gap: 64px;
+  gap: 48px;
   align-items: center;
 }
 .dispute-regret-panel,
@@ -2777,7 +2814,7 @@ footer .logo {
 }
 .dispute-proof-row {
   display: grid;
-  grid-template-columns: 132px 1fr;
+  grid-template-columns: 116px minmax(0, 1fr);
   gap: 20px;
   padding: 22px 24px;
   border-bottom: 1px solid var(--line);
@@ -2787,12 +2824,12 @@ footer .logo {
 }
 .dispute-proof-row strong {
   color: var(--navy);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
 }
 .dispute-proof-row span {
   color: var(--text-muted);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
 }
 .dispute-process-grid {
@@ -2993,13 +3030,9 @@ footer .logo {
   .seo-panel-row {
     grid-template-columns: 120px 1fr;
   }
-  .dispute-hero::before {
-    background:
-      linear-gradient(90deg, #05070c 0%, rgba(5, 7, 12, 0.88) 48%, rgba(5, 7, 12, 0.42) 100%),
-      linear-gradient(0deg, rgba(5, 7, 12, 0.88) 0%, rgba(5, 7, 12, 0.2) 46%, rgba(5, 7, 12, 0.5) 100%);
-  }
   .dispute-hero-inner {
-    padding: 70px 24px 62px;
+    grid-template-columns: 1fr;
+    gap: 34px;
   }
   .dispute-copy-grid,
   .dispute-showcase,
@@ -3107,22 +3140,15 @@ footer .logo {
     font-size: 18px;
   }
   .dispute-hero {
-    min-height: calc(100svh - 96px);
-  }
-  .dispute-hero-image {
-    object-position: 66% center;
-    opacity: 0.72;
-  }
-  .dispute-hero-inner {
-    padding: 58px 20px 54px;
+    padding: 56px 20px;
   }
   .dispute-kicker {
     margin-bottom: 12px;
     font-size: 14px;
   }
   .dispute-hero h1 {
-    font-size: 40px;
-    line-height: 1.16;
+    font-size: clamp(30px, 8.5vw, 34px);
+    line-height: 1.25;
   }
   .dispute-hero-copy {
     margin-bottom: 28px;
@@ -3151,14 +3177,14 @@ footer .logo {
     border-bottom: 0;
   }
   .dispute-section {
-    padding: 62px 18px;
+    padding: 56px 20px;
   }
   .dispute-compact-title {
     margin-bottom: 24px;
   }
   .dispute-compact-title h2,
   .dispute-compact-copy h2 {
-    font-size: 34px;
+    font-size: 28px;
   }
   .dispute-compact-card {
     min-height: auto;
@@ -3169,7 +3195,7 @@ footer .logo {
   }
   .dispute-compact-card p,
   .dispute-compact-copy p:not(.seo-kicker) {
-    font-size: 15px;
+    font-size: 16px;
   }
   .dispute-regret-row,
   .dispute-gallery-row {
@@ -3180,7 +3206,10 @@ footer .logo {
     font-size: 17px;
   }
   .dispute-gallery-row p {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .dispute-record-preview {
+    padding: 22px;
   }
   .dispute-proof-row {
     grid-template-columns: 1fr;
@@ -3468,11 +3497,11 @@ footer .logo {
     white-space: nowrap;
   }
   .inquiry-hero {
-    padding: 54px 18px 62px;
+    padding: 56px 20px;
   }
   .inquiry-brand-line,
   .inquiry-story-section {
-    padding: 58px 18px;
+    padding: 56px 20px;
   }
   .inquiry-hero-copy,
   .inquiry-hero-copy > * {
@@ -3480,8 +3509,8 @@ footer .logo {
     min-width: 0;
   }
   .inquiry-hero h1 {
-    font-size: 36px;
-    line-height: 1.18;
+    font-size: clamp(30px, 8.5vw, 34px);
+    line-height: 1.25;
   }
   .inquiry-hero-actions {
     flex-direction: column;
@@ -3495,7 +3524,7 @@ footer .logo {
   }
   .inquiry-story-copy h2,
   .inquiry-section-title h2 {
-    font-size: 34px;
+    font-size: 28px;
   }
   .inquiry-story-copy p:not(.seo-kicker) {
     font-size: 16px;
@@ -3511,7 +3540,7 @@ footer .logo {
   }
   .inquiry-room-card strong {
     text-align: left;
-    font-size: 15px;
+    font-size: 17px;
   }
   .inquiry-hero-metrics {
     display: grid;
@@ -3523,6 +3552,7 @@ footer .logo {
   }
   .inquiry-visual {
     width: min(100%, 320px);
+    padding: 20px;
   }
   .inquiry-alert-card {
     grid-template-columns: 44px minmax(0, 1fr);

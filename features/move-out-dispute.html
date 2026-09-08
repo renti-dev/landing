@@ -10,10 +10,10 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>퇴실 분쟁 대비 기록 | 랜디</title>
+    <title>입실 전 방 상태 기록 베타 | 랜디</title>
     <meta
       name="description"
-      content="입실 전 방 상태를 호실별로 남겨 퇴실 정산 때 필요한 사진과 메모를 바로 찾을 수 있게 정리하세요."
+      content="입실 전 사진과 메모를 호실·위치별로 정리하는 기능을 개발 중입니다. 랜디 입실 기록 기능의 베타 참여자를 모집합니다."
     />
     <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#070b12" />
@@ -26,10 +26,10 @@
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:site_name" content="랜디" />
-    <meta property="og:title" content="퇴실 분쟁 대비 기록 | 랜디" />
+    <meta property="og:title" content="입실 전 방 상태 기록 베타 | 랜디" />
     <meta
       property="og:description"
-      content="입실 전 사진과 메모를 호실별로 묶어 퇴실 정산 때 바로 꺼내봅니다."
+      content="입실 전 사진과 메모를 호실별로 정리하는 랜디 입실 기록 기능의 베타 참여자를 모집합니다."
     />
     <meta
       property="og:url"
@@ -43,10 +43,10 @@
     <meta property="og:image:height" content="1402" />
     <meta property="og:image:alt" content="랜디 퇴실 분쟁 대비 기록 소개 이미지" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="퇴실 분쟁 대비 기록 | 랜디" />
+    <meta name="twitter:title" content="입실 전 방 상태 기록 베타 | 랜디" />
     <meta
       name="twitter:description"
-      content="입실 전 사진과 메모를 호실별로 묶어 퇴실 정산 때 바로 꺼내봅니다."
+      content="입실 전 사진과 메모를 호실별로 정리하는 랜디 입실 기록 기능의 베타 참여자를 모집합니다."
     />
     <meta
       name="twitter:image"
@@ -61,8 +61,8 @@
             "@type": "WebPage",
             "@id": "https://www.landy.co.kr/features/move-out-dispute",
             "url": "https://www.landy.co.kr/features/move-out-dispute",
-            "name": "퇴실 분쟁 대비 기록",
-            "description": "입실 전 방 상태를 호실별 기록으로 남겨 퇴실 정산 때 필요한 사진과 메모를 바로 찾는 랜디 기능 소개 페이지입니다.",
+            "name": "입실 전 방 상태 기록 베타",
+            "description": "입실 전 사진과 메모를 호실·위치별로 정리하는 기능을 개발 중이며 베타 참여자를 모집합니다.",
             "inLanguage": "ko-KR"
           }
         ]
@@ -96,70 +96,65 @@
     </nav>
     <main id="main-content" tabindex="-1">
       <section class="dispute-hero">
-        <img
-          class="dispute-hero-image"
-          src="../assets/move-out-dispute.png"
-          alt=""
-          aria-hidden="true"
-        />
         <div class="dispute-hero-inner">
-          <p class="beta-hero-label">베타 테스터 모집 중</p>
-          <p class="dispute-kicker">입실 전 사진과 메모</p>
-          <h1>"원래 이랬어요"<br />퇴실 날 듣지 않으려면</h1>
+          <div class="dispute-hero-content">
+          <p class="beta-hero-label">개발 중 · 베타 참여자 모집 중</p>
+          <h1>입실 전 방 상태를<br />호실별로 남겨두세요</h1>
           <p class="dispute-hero-copy">
-            입실 전 방 상태를 호실과 위치별로 남겨두고, 퇴실 정산 때
-            바로 확인합니다.
+            입실 전 사진과 메모를 호실·위치별로 정리하고,
+            퇴실할 때 찾아볼 수 있는 기능을 개발 중입니다.
           </p>
           <div class="dispute-hero-actions">
             <a
               class="btn-primary dispute-primary"
               href="#beta"
               data-beta-location="hero"
-              >입실 기록 신청하기</a
+              >입실 기록 베타 신청</a
             >
-            <a class="btn-ghost dispute-ghost" href="#why-now"
-              >왜 미리 남기나요?</a
+            <a class="btn-ghost dispute-ghost" href="#record-standard"
+              >기록 방식 살펴보기</a
             >
           </div>
-          <dl class="dispute-hero-points" aria-label="기록 항목">
-            <div>
-              <dt>호실</dt>
-              <dd>302호처럼 찾을 기준</dd>
-            </div>
-            <div>
-              <dt>위치</dt>
-              <dd>욕실, 벽지, 창문처럼</dd>
-            </div>
-            <div>
-              <dt>상태</dt>
-              <dd>오염, 찍힘, 파손 메모</dd>
-            </div>
-          </dl>
+          </div>
+          <div class="dispute-record-preview" aria-label="개발 중인 입실 기록의 정리 예시">
+            <p class="dispute-record-caption">입실 기록 예시</p>
+            <h2>302호 · 입실 전</h2>
+            <dl>
+              <div>
+                <dt>욕실 문</dt>
+                <dd>문 아래쪽에 작은 흠집</dd>
+              </div>
+              <div>
+                <dt>주방 벽지</dt>
+                <dd>싱크대 옆 벽지에 얼룩</dd>
+              </div>
+            </dl>
+            <p class="dispute-record-note">위치별 사진에 상태 메모를 함께 남깁니다.</p>
+          </div>
         </div>
       </section>
 
       <section class="dispute-section dispute-section-alt" id="why-now">
         <div class="section-inner dispute-regret-layout">
           <div class="dispute-compact-copy">
-            <p class="seo-kicker">왜 미리 남겨두나요</p>
-            <h2>퇴실 날에는<br />기억보다 기록이 필요합니다</h2>
+            <p class="seo-kicker">입실 전 기록이 필요한 이유</p>
+            <h2>몇 달 전 방 상태가<br />기억나지 않을 때</h2>
             <p>
-              벽지 얼룩, 바닥 찍힘, 문틀 흠집은 몇 달만 지나도 입실 전
-              흔적이었는지 설명하기 어렵습니다. 사진과 메모가 있으면
-              당시 상태를 보고 이야기할 수 있습니다.
+              벽지 얼룩이나 바닥 흠집이 언제 생겼는지 기억만으로는 확인하기 어렵습니다.
+              입실 전에 남긴 사진과 메모가 있으면 당시 상태를 함께 살펴볼 수 있습니다.
             </p>
           </div>
-          <div class="dispute-regret-panel" aria-label="퇴실 정산에서 생기는 후회 장면">
+          <div class="dispute-regret-panel" aria-label="입실 전 기록을 참고하는 대화 예시">
             <div class="dispute-regret-row">
               <span>퇴실 확인</span>
               <strong>"이 얼룩은 원래 있었어요."</strong>
             </div>
             <div class="dispute-regret-row">
-              <span>임대인 기억</span>
-              <strong>"그때 봤던 것 같은데..."</strong>
+              <span>함께 확인할 내용</span>
+              <strong>입실 전에도 같은 얼룩이 있었는지</strong>
             </div>
             <div class="dispute-regret-row dispute-regret-row-strong">
-              <span>필요한 것</span>
+              <span>참고할 기록</span>
               <strong>입실 전 302호 사진과 메모</strong>
             </div>
           </div>
@@ -169,22 +164,19 @@
       <section class="dispute-section" id="record-standard">
         <div class="section-inner">
           <div class="dispute-compact-title">
-            <p class="seo-kicker">기록할 때 필요한 기준</p>
-            <h2>호실, 위치, 상태만 정해두면<br />나중에 찾기 쉽습니다</h2>
+            <p class="seo-kicker">기록할 내용</p>
+            <h2>사진에 호실과 위치,<br />상태 메모를 함께</h2>
           </div>
           <div class="dispute-compact-grid">
             <article class="dispute-compact-card">
-              <span>01</span>
               <h3>호실</h3>
               <p>여러 방 사진이 섞이지 않게 201호, 302호처럼 나눕니다.</p>
             </article>
             <article class="dispute-compact-card">
-              <span>02</span>
               <h3>위치</h3>
               <p>현관, 욕실 문, 주방 벽지처럼 확인할 자리를 남깁니다.</p>
             </article>
             <article class="dispute-compact-card">
-              <span>03</span>
               <h3>상태</h3>
               <p>찍힘, 오염, 파손처럼 사진만으로 부족한 내용을 적습니다.</p>
             </article>
@@ -195,37 +187,11 @@
       <section class="dispute-section dispute-section-alt">
         <div class="section-inner dispute-compact-row">
           <div class="dispute-compact-copy">
-            <p class="seo-kicker">폰 갤러리와 다른 점</p>
-            <h2>갤러리에만 두면<br />필요할 때 찾기 어렵습니다</h2>
+            <p class="seo-kicker">남겨둔 기록 활용</p>
+            <h2>퇴실 전, 같은 위치의<br />사진과 메모를 확인하세요</h2>
             <p>
-              사진을 찍어도 카톡 이미지, 스크린샷, 다른 호실 사진 사이에
-              섞이면 퇴실 때 다시 찾기 어렵습니다. 랜디는 입실 전 사진과
-              메모를 호실 기준으로 모아둡니다.
-            </p>
-          </div>
-          <div class="dispute-gallery-panel" aria-label="폰 갤러리와 랜디 기록 비교">
-            <div class="dispute-gallery-row">
-              <span>폰 갤러리</span>
-              <strong>2026년 3월 사진 842장</strong>
-              <p>날짜와 썸네일만 보고 필요한 사진을 다시 찾습니다.</p>
-            </div>
-            <div class="dispute-gallery-row dispute-gallery-row-primary">
-              <span>랜디 기록</span>
-              <strong>302호 · 욕실 문 · 입실 전</strong>
-              <p>호실과 위치로 묶여 퇴실 정산 전에 바로 꺼내봅니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="dispute-section">
-        <div class="section-inner dispute-compact-row">
-          <div class="dispute-compact-copy">
-            <p class="seo-kicker">퇴실 정산 전 확인</p>
-            <h2>정산 전에<br />필요한 기록부터 확인합니다</h2>
-            <p>
-              원상복구 요청 여부를 대신 판단하지는 않습니다. 다만 입실 전
-              상태를 빠르게 찾아보고, 어떤 상태였는지 설명할 수 있게 돕습니다.
+              해당 호실의 기록을 찾아 현재 상태와 비교할 수 있도록 준비하고 있습니다.
+              수리나 정산이 필요한지는 사진과 메모를 참고해 임대인이 직접 판단합니다.
             </p>
           </div>
           <div class="dispute-proof-list dispute-compact-list">
@@ -239,7 +205,7 @@
             </div>
             <div class="dispute-proof-row">
               <strong>기록으로 설명</strong>
-              <span>정산 대화를 기억이 아니라 남겨둔 사진과 메모로 시작합니다.</span>
+              <span>당시 사진과 메모를 보며 세입자와 상태를 확인합니다.</span>
             </div>
           </div>
         </div>
