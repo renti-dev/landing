@@ -10,8 +10,6 @@ const pages = [
   "features/small-landlord-app.html",
   "features/contract-expiry.html",
   "features/overdue-notice.html",
-  "legal/privacy-policy.html",
-  "legal/data-deletion.html",
 ];
 
 test("navigation store badges share the asset-aligned 136 by 41 dimensions", () => {

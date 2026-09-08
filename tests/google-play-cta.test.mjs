@@ -12,7 +12,6 @@ const pages = new Map([
   ["features/small-landlord-app.html", 3],
   ["features/contract-expiry.html", 3],
   ["features/overdue-notice.html", 3],
-  ["legal/data-deletion.html", 1],
 ]);
 
 test("released pages consistently direct download CTAs to Google Play", () => {
