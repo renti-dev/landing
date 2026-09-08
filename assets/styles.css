@@ -3198,7 +3198,7 @@ footer .logo {
     font-size: 24px;
   }
   .section {
-    padding: 62px 18px;
+    padding: 62px 24px;
   }
   h2 {
     font-size: 30px;
@@ -3357,6 +3357,10 @@ footer .logo {
 }
 
 @media (max-width: 374px) {
+  .section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .home-page .hero {
     padding-left: 16px;
     padding-right: 16px;
